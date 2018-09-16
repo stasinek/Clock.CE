@@ -1,0 +1,301 @@
+//Microsoft eMbedded Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "newres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Polish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_USTAWALARM DIALOG DISCARDABLE  0, 0, 180, 120
+STYLE WS_CHILD | WS_VISIBLE | WS_BORDER
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,10,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,26,40,14
+    PUSHBUTTON      "+5 min.",IDC_BUTTON1,10,10,35,14
+    PUSHBUTTON      "+10 min.",IDC_BUTTON2,50,10,35,14
+    PUSHBUTTON      "+30 min.",IDC_BUTTON3,90,10,35,14
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,51,79,
+                    11,14
+    CONTROL         "Spin2",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,103,79,
+                    11,14
+    CONTROL         "Spin3",IDC_SPIN3,"msctls_updown32",UDS_ARROWKEYS,159,79,
+                    11,14
+    EDITTEXT        IDC_EDIT1,10,78,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,63,78,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,117,78,40,14,ES_AUTOHSCROLL
+END
+
+IDD_KALENDARZ DIALOG DISCARDABLE  0, 0, 180, 120
+STYLE WS_CHILD | WS_VISIBLE | WS_BORDER
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,10,40,14
+END
+
+IDD_ZEGAR DIALOG DISCARDABLE  0, 0, 180, 120
+STYLE DS_SETFOREGROUND | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
+FONT 8, "System"
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_USTAWALARM, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 170
+        VERTGUIDE, 130
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_KALENDARZ, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 170
+        VERTGUIDE, 130
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_ZEGAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 170
+        VERTGUIDE, 130
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 110
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO                BITMAP  DISCARDABLE     "./bmp/logo2_mini_8-bit.bmp"
+IDB_WINDOWSCE           BITMAP  DISCARDABLE     "./bmp/windowsce_red.bmp"
+IDB_U_NULL              BITMAP  DISCARDABLE     "./bmp/u_null.bmp"
+#endif    // Polish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 180, 120
+STYLE WS_POPUP | WS_VISIBLE | WS_BORDER
+EXSTYLE 0x80000000L
+FONT 8, "System"
+BEGIN
+    LTEXT           "Zegarek Version 1.2 autor: sstsoft@wp.pl",IDC_STATIC,10,
+                    54,160,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,130,10,40,14
+    LTEXT           "Jeœli uruchamiasz program akceptujesz licencje u¿ytkowania i rozpowszechniania z pliku licencja.txt oraz instrukcje z pliku help.txt \rNie odpowiadam za jakiekolwiek umyslne czy nieumyœlne szkody jakie spowoduje ten program i jego u¿ytkowanie.",
+                    IDC_STATIC,10,67,160,43,0,WS_EX_STATICEDGE
+    CONTROL         110,IDC_STATIC,"Static",SS_BITMAP,10,10,135,44,
+                    WS_EX_STATICEDGE
+END
+
+IDD_INFORMACJE DIALOG DISCARDABLE  0, 0, 180, 120
+STYLE WS_CHILD | WS_VISIBLE | WS_BORDER
+FONT 8, "System"
+BEGIN
+    LTEXT           "TODO: Place controls to manipulate properties of the Control on this dialog.",
+                    IDC_STATIC,10,49,151,16
+    DEFPUSHBUTTON   "OK",IDOK,130,10,40,14
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    10,99,160,11
+END
+
+IDD_URUCHOM DIALOG DISCARDABLE  0, 0, 180, 120
+STYLE WS_CHILD | WS_VISIBLE | WS_BORDER
+FONT 8, "System"
+BEGIN
+    LTEXT           "TODO: Click OK to run selected program, >> to change, Cancel for return to main screen",
+                    IDC_STATIC,10,10,114,25
+    PUSHBUTTON      ">>",IDNEXT,130,96,40,14
+    DEFPUSHBUTTON   "OK",IDOK,130,10,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,26,40,14
+    CONTROL         112,IDC_STATIC,"Static",SS_BITMAP,10,50,147,34
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 170
+        VERTGUIDE, 130
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_INFORMACJE, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 170
+        VERTGUIDE, 130
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_URUCHOM, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 170
+        VERTGUIDE, 130
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 110
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ZEGAREK             ICON    DISCARDABLE     "Zegarek.ICO"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""newres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDM_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "U&ruchom"
+    BEGIN
+        MENUITEM "0",                           IDM_0
+        MENUITEM "1",                           IDM_1
+        MENUITEM "2",                           IDM_2
+        MENUITEM "3",                           IDM_3
+        MENUITEM "4",                           IDM_4
+    END
+    POPUP "&Ekran"
+    BEGIN
+        MENUITEM "Kalen&darz",                  IDM_KALENDARZ
+        MENUITEM "&Informacje o baterii",       IDM_INFORMACJE
+        MENUITEM "Ustaw &alarm",                IDM_USTAWALARM
+    END
+    MENUITEM "&Pomoc",                      IDM_HELP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_ZEGAREK ACCELERATORS DISCARDABLE 
+BEGIN
+    "/",            IDM_HELP_ABOUT,         ASCII,  ALT, NOINVERT
+    VK_F4,          IDM_FILE_EXIT,          VIRTKEY, ALT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "ZEGAREK"
+    IDS_HELLO               "Hello World!"
+    IDC_ZEGAREK             "ZEGAREK"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,268 @@
+[Closed Files]
+File_0=SourceModule,'c:\program files\borland\cbuilder6\include\winbase.h',0,1,5476,1,5484,0,0
+File_1=SourceModule,'D:\My Projects\CE\ZEGAREK\BateriaWnd.cpp',0,1,1,1,1,0,0
+File_2=SourceModule,'D:\My Projects\CE\ZEGAREK\AboutWnd.cpp',0,1,1,1,1,0,0
+File_3=SourceModule,'D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Panel\Main_frm.cpp',0,1,613,78,623,0,0
+File_4=SourceModule,'D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Panel\Lupa_frm.cpp',0,1,136,1,150,0,0
+File_5=SourceModule,'D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Panel\Zeus_frm.cpp',0,1,209,67,217,0,0
+File_6=SourceModule,'D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Panel\Desk_frm.cpp',0,1,310,17,324,0,0
+File_7=SourceModule,'D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Panel\Expose_frm.cpp',0,1,214,17,228,0,0
+File_8=SourceModule,'D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Panel\Core.cpp',0,1,1,3,4,0,0
+File_9=SourceModule,'D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Panel\Dni_frm.cpp',0,1,1,1,1,0,0
+
+[Modules]
+Module0=D:\My Projects\CE\Zegarek\Zegarek.cpp
+Module1=D:\My Projects\CE\ZEGAREK\AboutWnd.h
+Module2=D:\My Projects\CE\Zegarek\Zegarek.h
+Module3=D:\My Projects\CE\ZEGAREK\Zegarek.rc
+Module4=D:\My Projects\CE\ZEGAREK\BateriaWnd.h
+Module5=D:\My Projects\CE\ZEGAREK\ZegarWnd.cpp
+Module6=D:\My Projects\CE\ZEGAREK\GetPrivateProfileStringW.h
+Module7=D:\My Projects\CE\ZEGAREK\GetPrivateProfileStringW.cpp
+Count=8
+EditWindowCount=1
+
+[D:\My Projects\CE\Zegarek\Zegarek.cpp]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[D:\My Projects\CE\ZEGAREK\AboutWnd.h]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[D:\My Projects\CE\Zegarek\Zegarek.h]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[D:\My Projects\CE\ZEGAREK\Zegarek.rc]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[D:\My Projects\CE\ZEGAREK\BateriaWnd.h]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[D:\My Projects\CE\ZEGAREK\ZegarWnd.cpp]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[D:\My Projects\CE\ZEGAREK\GetPrivateProfileStringW.h]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[D:\My Projects\CE\ZEGAREK\GetPrivateProfileStringW.cpp]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[C:\Program Files\Borland\CBuilder6\Projects\ProjectGroup1.bpg]
+FormState=0
+FormOnTop=0
+
+[D:\My Projects\CE\ZEGAREK\Zegarek.bpr]
+FormState=0
+FormOnTop=0
+
+[EditWindow0]
+ViewCount=8
+CurrentView=0
+View0=0
+View1=1
+View2=2
+View3=3
+View4=4
+View5=5
+View6=6
+View7=7
+MessageView=MessageView@EditWindow0
+Create=1
+Visible=1
+State=2
+Left=199
+Top=229
+Width=825
+Height=482
+MaxLeft=-4
+MaxTop=97
+MaxWidth=1032
+MaxHeight=647
+ClientWidth=1024
+ClientHeight=620
+LeftPanelSize=0
+RightPanelSize=0
+BottomPanelSize=0
+BottomPanelClients=MessageView@EditWindow0
+BottomPanelData=00000400010000000B0000004D65737361676556696577000000000000000000000000000000000001000000000000000000000000FFFFFFFF
+
+[View0]
+Module=D:\My Projects\CE\Zegarek\Zegarek.cpp
+CursorX=44
+CursorY=26
+TopLine=321
+LeftCol=1
+
+[View1]
+Module=D:\My Projects\CE\ZEGAREK\GetPrivateProfileStringW.cpp
+CursorX=15
+CursorY=15
+TopLine=1
+LeftCol=1
+
+[View2]
+Module=D:\My Projects\CE\ZEGAREK\GetPrivateProfileStringW.h
+CursorX=33
+CursorY=1
+TopLine=1
+LeftCol=1
+
+[View3]
+Module=D:\My Projects\CE\ZEGAREK\ZegarWnd.cpp
+CursorX=5
+CursorY=229
+TopLine=202
+LeftCol=1
+
+[View4]
+Module=D:\My Projects\CE\ZEGAREK\BateriaWnd.h
+CursorX=1
+CursorY=39
+TopLine=17
+LeftCol=1
+
+[View5]
+Module=D:\My Projects\CE\ZEGAREK\Zegarek.rc
+CursorX=1
+CursorY=1
+TopLine=271
+LeftCol=1
+
+[View6]
+Module=D:\My Projects\CE\Zegarek\Zegarek.h
+CursorX=37
+CursorY=90
+TopLine=81
+LeftCol=1
+
+[View7]
+Module=D:\My Projects\CE\ZEGAREK\AboutWnd.h
+CursorX=7
+CursorY=19
+TopLine=1
+LeftCol=1
+
+[Watches]
+Count=0
+
+[Breakpoints]
+Count=0
+
+[AddressBreakpoints]
+Count=0
+
+[Main Window]
+Create=1
+Visible=1
+State=2
+Left=9
+Top=15
+Width=1015
+Height=105
+MaxLeft=-4
+MaxTop=-4
+MaxWidth=1032
+MaxHeight=105
+ClientWidth=1024
+ClientHeight=78
+
+[ProjectManager]
+Create=1
+Visible=0
+State=0
+Left=369
+Top=372
+Width=438
+Height=303
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=430
+ClientHeight=279
+TBDockHeight=303
+LRDockWidth=438
+Dockable=1
+
+[AlignmentPalette]
+Create=1
+Visible=0
+State=0
+Left=200
+Top=107
+Width=156
+Height=82
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=150
+ClientHeight=60
+
+[PropertyInspector]
+Create=1
+Visible=0
+State=0
+Left=0
+Top=359
+Width=190
+Height=381
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=182
+ClientHeight=357
+TBDockHeight=381
+LRDockWidth=190
+Dockable=1
+SplitPos=85
+ArrangeBy=Name
+SelectedItem=
+ExpandedItems=
+HiddenCategories=
+
+[ObjectTree]
+Create=1
+Visible=0
+State=0
+Left=0
+Top=105
+Width=190
+Height=252
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=182
+ClientHeight=228
+TBDockHeight=252
+LRDockWidth=190
+Dockable=1
+
+[MessageView@EditWindow0]
+Create=1
+Visible=0
+State=0
+Left=12
+Top=0
+Width=1012
+Height=85
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=1012
+ClientHeight=85
+TBDockHeight=85
+LRDockWidth=443
+Dockable=1
+
+[DockHosts]
+DockHostCount=0
+

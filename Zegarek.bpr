@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="Zegarek.exe"/>
+    <OBJFILES value="Zegarek.obj AboutWnd.obj AlarmWnd.obj BateriaWnd.obj 
+      GetPrivateProfileStringW.obj KalendarzWnd.obj sstsoft_button.obj 
+      StdAfx.obj UruchomWnd.obj ZegarWnd.obj"/>
+    <RESFILES value="Zegarek.res Zegarek.res"/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value=""/>
+    <SPARELIBS value=""/>
+    <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi bcbsmp.bpi dclocx.bpi USRPKG.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG;UNICODE"/>
+    <SYSDEFINES value="NO_STRICT;_NO_VCL;USEPACKAGES"/>
+    <MAINSOURCE value="Zegarek.bpf"/>
+    <INCLUDEPATH value="&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;D:\My Projects\CE\Zegarek&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\Projects\Lib;&quot;D:\My Projects\CE\Zegarek&quot;;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Q -Vx -Ve -VF -C -fp -ff -X- -ps -a8 -6 
+      -b- -d -k -y -v -vi- -tW -tWM- -c"/>
+    <PFLAGS value="-$YD -$W -$U -$R -$Q -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -GD -s -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj $(PACKAGES) $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cw32.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="Zegarek.res" FORMNAME="" UNITNAME="Zegarek.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Zegarek.bpf" FORMNAME="" UNITNAME="Zegarek" CONTAINERID="BPF" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Zegarek.cpp" FORMNAME="" UNITNAME="Zegarek" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AboutWnd.cpp" FORMNAME="" UNITNAME="AboutWnd.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AlarmWnd.cpp" FORMNAME="" UNITNAME="AlarmWnd.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BateriaWnd.cpp" FORMNAME="" UNITNAME="BateriaWnd.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GetPrivateProfileStringW.cpp" FORMNAME="" UNITNAME="GetPrivateProfileStringW.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="KalendarzWnd.cpp" FORMNAME="" UNITNAME="KalendarzWnd.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="sstsoft_button.cpp" FORMNAME="" UNITNAME="sstsoft_button.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="StdAfx.cpp" FORMNAME="" UNITNAME="StdAfx.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="UruchomWnd.cpp" FORMNAME="" UNITNAME="UruchomWnd.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ZegarWnd.cpp" FORMNAME="" UNITNAME="ZegarWnd.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Zegarek.rc" FORMNAME="" UNITNAME="Zegarek.rc" CONTAINERID="RCCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=2
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=1
+Special=0
+Private=0
+DLL=0
+Locale=1045
+CodePage=1250
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=2.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=2
+Item0=C:\Program Files\Borland\CBuilder6\Projects;D:\My Projects\CE\Zegarek;$(BCB)\include;$(BCB)\include\vcl
+Item1=D:\My Projects\CE\Zegarek;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=2
+Item0=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;D:\My Projects\CE\Zegarek;$(BCB)\lib\obj;$(BCB)\lib
+Item1=$(BCB)\Projects\Lib;D:\My Projects\CE\Zegarek;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=3
+Item0=_DEBUG;UNICODE
+Item1=_DEBUG
+Item2=_DEBUG UNICODE __UNICODE
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=1
+LinkDebugVcl=1
+  </IDEOPTIONS>
+</PROJECT>
