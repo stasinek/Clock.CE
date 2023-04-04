@@ -1,6 +1,6 @@
-////////////////////////
+/////
 /// URUCHOM
-////////////////////////
+/////
 
 #ifndef UruchomWnd_h_
 #define UruchomWnd_h_
@@ -11,11 +11,11 @@
 #include <stdlib.h>
 #include <string.h>
 #include <Windowsx.h>
-#include "Zegarek.h"
+#include "ZegarekWinMain.h"
 
-////////////////////////////////////////////////////////////////
-////////////////////////URUCHOM    /////////////////////////////
-////////////////////////////////////////////////////////////////
+//-------------------------------------------------------------
+/////URUCHOM    ////
+//-------------------------------------------------------------
 
 extern struct __uruchom {
 HWND hWnd, btn_hWnd;
@@ -39,8 +39,8 @@ RECT rt;
 unsigned short selected;
 } uruchom;
 
-////////////////////////
+/////
 // OKNO URUCHAMIANIA     
-////////////////////////
+/////
 extern LRESULT CALLBACK	UruchomWndProc			(HWND, UINT, WPARAM, LPARAM);
 #endif

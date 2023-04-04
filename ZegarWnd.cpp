@@ -1,3 +1,4 @@
+//-------------------------------------------------------------
 #include "stdafx.h"
 #include "ZegarWnd.h"
 #include "UruchomWnd.h"
@@ -5,22 +6,20 @@
 #include "AlarmWnd.h"
 #include "KalendarzWnd.h"
 #include "GetPrivateProfileStringW.h"
+//-------------------------------------------------------------
 /* all of definitions.h content */
-
-////////////////////////////////////////////////////////////////
-////////////////////////ZEGAREK    /////////////////////////////
-////////////////////////////////////////////////////////////////
+//-------------------------------------------------------------
+/// ZEGAREK 
+//-------------------------------------------------------------
 struct __zegar zegar;
 struct __godzina godzina;
-
 // Mesage handler for the About box.GetDialogBaseUnits
 LRESULT CALLBACK ZegarWndProc(HWND this_hDlg, UINT message, WPARAM wParam, LPARAM lParam)
 {
 
-	int wmId, wmEvent, i;
-	RECT rt, rt1;
+int wmId, wmEvent, i, u;
+RECT rt, rt1;
 wchar_t u_sh[3],ugroup_sh[5] = _T("");
-int u;
 wchar_t bitmap_file[32];
 MENUITEMINFOW mii = { sizeof(MENUITEMINFOW) };
 unsigned int idm;
@@ -32,27 +31,27 @@ TIME_ZONE_INFORMATION TimeZoneInformation;
 			// trying to center the About dialog
 			if (GetWindowRect(this_hDlg, &rt1)) {
 				GetClientRect(GetParent(this_hDlg), &rt);
-				// if the About box is larger than the physical screen 
+				// if the About box is larger than the physical screen
 				SetWindowPos(this_hDlg, 0, rt.left, rt.top,
 					rt.right-rt.left, rt.bottom-rt.top, SWP_NOZORDER);
 			}
 		GetTimeZoneInformation(&TimeZoneInformation);
 		TimeZoneInformation.Bias = -60;
-		SetTimeZoneInformation(&TimeZoneInformation);	
+		SetTimeZoneInformation(&TimeZoneInformation);
 
 		main_struct.uTimer[0] = SetTimer(this_hDlg,1111,
 		1000,(TIMERPROC)ZegarTimerProc);
-		main_struct.lf.lfHeight = 80; 
+		main_struct.lf.lfHeight = 80;
 		main_struct.lf.lfQuality =  CLEARTYPE_QUALITY;
-		main_struct.lf.lfWeight = 700; 
+		main_struct.lf.lfWeight = 700;
 		main_struct.lf.lfCharSet = EASTEUROPE_CHARSET;
-		strcpy((char*)main_struct.lf.lfFaceName,"Verdana"); 
+		strcpy((char*)main_struct.lf.lfFaceName,"Verdana");
 		godzina.hf = CreateFontIndirect(&main_struct.lf);
 		godzina.hfc = (COLORREF)0x000000;
 		godzina.hb = CreateSolidBrush((COLORREF)0xFF0000);
 		godzina.hp = CreatePen(PS_SOLID,1,(COLORREF)0x000000);
 		GetClientRect(this_hDlg,&godzina.rt);
-		#ifndef CE
+#ifndef CE
 		godzina.rt.top -=24;
 #endif
 		godzina.rt.top = godzina.rt.top + 34;
@@ -62,8 +61,8 @@ TIME_ZONE_INFORMATION TimeZoneInformation;
 
 
 		main_struct.uTimer[2] = SetTimer(this_hDlg,2222,
-			60000,(TIMERPROC)AlarmTimerProc); 
-		main_struct.lf.lfHeight = 34; 
+			60000,(TIMERPROC)AlarmTimerProc);
+		main_struct.lf.lfHeight = 34;
 		main_struct.lf.lfQuality =  CLEARTYPE_QUALITY;
 		main_struct.lf.lfWeight = 700; 
 		main_struct.lf.lfCharSet = EASTEUROPE_CHARSET;
@@ -346,16 +345,11 @@ else
 	}
     return FALSE;
 }
+//---------------------------------------------------------------------------///
+/// TIMERY
+//---------------------------------------------------------------------------///
 
-///////////////////////////////////////////////////////////////
-///////////////////////////TIMERY//////////////////////////////
-///////////////////////////////////////////////////////////////
-
-void CALLBACK ZegarTimerProc(
-HWND hWnd, 
-UINT uMsg, 
-UINT idEvent, 
-DWORD dwTime )
+void CALLBACK ZegarTimerProc(HWND hWnd, UINT uMsg, UINT idEvent, DWORD dwTime )
 {
 	main_struct.global_Time = dwTime;
 GetLocalTime(&godzina.localTime);
@@ -393,5 +387,6 @@ DrawTextW(bufor.dc, godzina.text,wcslen(godzina.text), &godzina.rt,
 */
 
 if (zegar.hWnd)
-RedrawWindow(zegar.hWnd, NULL, NULL, RDW_INVALIDATE);
+    RedrawWindow(zegar.hWnd, NULL, NULL, RDW_INVALIDATE);
 }
+//-------------------------------------------------------------

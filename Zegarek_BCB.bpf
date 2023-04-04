@@ -1,0 +1,14 @@
+USEUNIT("ZegarWnd.cpp");
+USEUNIT("AboutWnd.cpp");
+USEUNIT("AlarmWnd.cpp");
+USEUNIT("BateriaWnd.cpp");
+USEUNIT("KalendarzWnd.cpp");
+USEUNIT("sstsoft_button.cpp");
+USEUNIT("StdAfx.cpp");
+USEUNIT("UruchomWnd.cpp");
+USERES("Zegarek_BCB.res");
+USEUNIT("ZegarekWinMain.cpp");
+//---------------------------------------------------------------------------
+This file is used by the project manager only and should be treated like the project file
+
+WinMain 

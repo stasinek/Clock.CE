@@ -1,13 +1,12 @@
+//-------------------------------------------------------------
 #include "stdafx.h"
 #include "AboutWnd.h"
+//-------------------------------------------------------------
 /* all of definitions.h content */
-
-////////////////////////////////////////////////////////////////
-////////////////////////ABOUT      /////////////////////////////
-////////////////////////////////////////////////////////////////
-
+//-------------------------------------------------------------
+// ABOUT     
+//-------------------------------------------------------------
 struct __about about;
-
 // Mesage handler for the About box.
 LRESULT CALLBACK AboutWndProc(HWND this_hDlg, UINT message, WPARAM wParam, LPARAM lParam)
 {
@@ -37,3 +36,4 @@ LRESULT CALLBACK AboutWndProc(HWND this_hDlg, UINT message, WPARAM wParam, LPARA
 	}
     return FALSE;
 }
+//-------------------------------------------------------------

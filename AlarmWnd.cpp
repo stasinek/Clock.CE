@@ -1,13 +1,12 @@
+//-------------------------------------------------------------
 #include "stdafx.h"
 #include "AlarmWnd.h"
 #include "ZegarWnd.h"
 /* all of definitions.h content */
-////////////////////////////////////////////////////////////////
-////////////////////////ALARM      /////////////////////////////
-////////////////////////////////////////////////////////////////
-
+//-------------------------------------------------------------
+// ALARM      
+//-------------------------------------------------------------
 struct __alarm alarm;
-
 // Mesage handler for the About box.
 LRESULT CALLBACK AlarmWndProc(HWND this_hDlg, UINT message, WPARAM wParam, LPARAM lParam)
 {
@@ -39,12 +38,11 @@ LRESULT CALLBACK AlarmWndProc(HWND this_hDlg, UINT message, WPARAM wParam, LPARA
 	}
     return FALSE;
 }
+//-------------------------------------------------------------
+/// Timer PROC
+//-------------------------------------------------------------
 
-void CALLBACK AlarmTimerProc(
-HWND hWnd, 
-UINT uMsg, 
-UINT idEvent, 
-DWORD dwTime )
+void CALLBACK AlarmTimerProc(HWND hWnd, UINT uMsg, UINT idEvent, DWORD dwTime )
 {
 	main_struct.global_Time = dwTime;
 
@@ -99,4 +97,4 @@ if (alarm.on==true && activate==true)
 //if (zegar.hWnd)
 //RedrawWindow(zegar.hWnd, NULL, NULL, RDW_INVALIDATE);
 }
-
+//-------------------------------------------------------------

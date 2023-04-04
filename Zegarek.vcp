@@ -192,7 +192,7 @@ DEP_CPP_ABOUT=\
 	".\AboutWnd.h"\
 	".\GetPrivateProfileStringW.h"\
 	".\StdAfx.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	
 
 !ELSEIF  "$(CFG)" == "Zegarek - Win32 (WCE ARMV4) Debug"
@@ -200,7 +200,7 @@ DEP_CPP_ABOUT=\
 DEP_CPP_ABOUT=\
 	".\AboutWnd.h"\
 	".\StdAfx.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	
 NODEP_CPP_ABOUT=\
 	".\GetPrivateProfileString.h"\
@@ -211,7 +211,7 @@ NODEP_CPP_ABOUT=\
 DEP_CPP_ABOUT=\
 	".\AboutWnd.h"\
 	".\StdAfx.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	
 NODEP_CPP_ABOUT=\
 	".\GetPrivateProfileString.h"\
@@ -222,7 +222,7 @@ NODEP_CPP_ABOUT=\
 DEP_CPP_ABOUT=\
 	".\AboutWnd.h"\
 	".\StdAfx.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	
 NODEP_CPP_ABOUT=\
 	".\GetPrivateProfileString.h"\
@@ -241,7 +241,7 @@ DEP_CPP_ALARM=\
 	".\AlarmWnd.h"\
 	".\GetPrivateProfileStringW.h"\
 	".\StdAfx.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	".\ZegarWnd.h"\
 	
 
@@ -250,7 +250,7 @@ DEP_CPP_ALARM=\
 DEP_CPP_ALARM=\
 	".\AlarmWnd.h"\
 	".\StdAfx.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	
 NODEP_CPP_ALARM=\
 	".\GetPrivateProfileString.h"\
@@ -261,7 +261,7 @@ NODEP_CPP_ALARM=\
 DEP_CPP_ALARM=\
 	".\AlarmWnd.h"\
 	".\StdAfx.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	
 NODEP_CPP_ALARM=\
 	".\GetPrivateProfileString.h"\
@@ -272,7 +272,7 @@ NODEP_CPP_ALARM=\
 DEP_CPP_ALARM=\
 	".\AlarmWnd.h"\
 	".\StdAfx.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	
 NODEP_CPP_ALARM=\
 	".\GetPrivateProfileString.h"\
@@ -291,7 +291,7 @@ DEP_CPP_BATER=\
 	".\BateriaWnd.h"\
 	".\GetPrivateProfileStringW.h"\
 	".\StdAfx.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	
 
 !ELSEIF  "$(CFG)" == "Zegarek - Win32 (WCE ARMV4) Debug"
@@ -299,7 +299,7 @@ DEP_CPP_BATER=\
 DEP_CPP_BATER=\
 	".\BateriaWnd.h"\
 	".\StdAfx.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	
 NODEP_CPP_BATER=\
 	".\GetPrivateProfileString.h"\
@@ -310,7 +310,7 @@ NODEP_CPP_BATER=\
 DEP_CPP_BATER=\
 	".\BateriaWnd.h"\
 	".\StdAfx.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	
 NODEP_CPP_BATER=\
 	".\GetPrivateProfileString.h"\
@@ -321,7 +321,7 @@ NODEP_CPP_BATER=\
 DEP_CPP_BATER=\
 	".\BateriaWnd.h"\
 	".\StdAfx.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	
 NODEP_CPP_BATER=\
 	".\GetPrivateProfileString.h"\
@@ -381,7 +381,7 @@ DEP_CPP_KALEN=\
 	".\GetPrivateProfileStringW.h"\
 	".\KalendarzWnd.h"\
 	".\StdAfx.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	
 
 !ELSEIF  "$(CFG)" == "Zegarek - Win32 (WCE ARMV4) Debug"
@@ -389,7 +389,7 @@ DEP_CPP_KALEN=\
 DEP_CPP_KALEN=\
 	".\KalendarzWnd.h"\
 	".\StdAfx.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	
 NODEP_CPP_KALEN=\
 	".\GetPrivateProfileString.h"\
@@ -400,7 +400,7 @@ NODEP_CPP_KALEN=\
 DEP_CPP_KALEN=\
 	".\KalendarzWnd.h"\
 	".\StdAfx.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	
 NODEP_CPP_KALEN=\
 	".\GetPrivateProfileString.h"\
@@ -411,7 +411,7 @@ NODEP_CPP_KALEN=\
 DEP_CPP_KALEN=\
 	".\KalendarzWnd.h"\
 	".\StdAfx.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	
 NODEP_CPP_KALEN=\
 	".\GetPrivateProfileString.h"\
@@ -498,7 +498,7 @@ DEP_CPP_URUCH=\
 	".\GetPrivateProfileStringW.h"\
 	".\StdAfx.h"\
 	".\UruchomWnd.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	
 
 !ELSEIF  "$(CFG)" == "Zegarek - Win32 (WCE ARMV4) Debug"
@@ -506,7 +506,7 @@ DEP_CPP_URUCH=\
 DEP_CPP_URUCH=\
 	".\StdAfx.h"\
 	".\UruchomWnd.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	
 NODEP_CPP_URUCH=\
 	".\GetPrivateProfileString.h"\
@@ -517,7 +517,7 @@ NODEP_CPP_URUCH=\
 DEP_CPP_URUCH=\
 	".\StdAfx.h"\
 	".\UruchomWnd.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	
 NODEP_CPP_URUCH=\
 	".\GetPrivateProfileString.h"\
@@ -528,7 +528,7 @@ NODEP_CPP_URUCH=\
 DEP_CPP_URUCH=\
 	".\StdAfx.h"\
 	".\UruchomWnd.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	
 NODEP_CPP_URUCH=\
 	".\GetPrivateProfileString.h"\
@@ -539,7 +539,7 @@ NODEP_CPP_URUCH=\
 # End Source File
 # Begin Source File
 
-SOURCE=.\Zegarek.cpp
+SOURCE=.\ZegarekWinMain.cpp
 
 !IF  "$(CFG)" == "Zegarek - Win32 (WCE ARMV4) Release"
 
@@ -551,7 +551,7 @@ DEP_CPP_ZEGAR=\
 	".\KalendarzWnd.h"\
 	".\StdAfx.h"\
 	".\UruchomWnd.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	".\ZegarWnd.h"\
 	
 
@@ -559,14 +559,14 @@ DEP_CPP_ZEGAR=\
 
 DEP_CPP_ZEGAR=\
 	".\StdAfx.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	
 
 !ELSEIF  "$(CFG)" == "Zegarek - Win32 (WCE x86) Release"
 
 DEP_CPP_ZEGAR=\
 	".\StdAfx.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	
 NODEP_CPP_ZEGAR=\
 	".\GetPrivateProfileString.h"\
@@ -580,7 +580,7 @@ DEP_CPP_ZEGAR=\
 	".\KalendarzWnd.h"\
 	".\StdAfx.h"\
 	".\UruchomWnd.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	".\ZegarWnd.h"\
 	
 NODEP_CPP_ZEGAR=\
@@ -618,7 +618,7 @@ DEP_CPP_ZEGARW=\
 	".\KalendarzWnd.h"\
 	".\StdAfx.h"\
 	".\UruchomWnd.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	".\ZegarWnd.h"\
 	
 
@@ -626,7 +626,7 @@ DEP_CPP_ZEGARW=\
 
 DEP_CPP_ZEGARW=\
 	".\StdAfx.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	".\ZegarWnd.h"\
 	
 NODEP_CPP_ZEGARW=\
@@ -637,7 +637,7 @@ NODEP_CPP_ZEGARW=\
 
 DEP_CPP_ZEGARW=\
 	".\StdAfx.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	".\ZegarWnd.h"\
 	
 NODEP_CPP_ZEGARW=\
@@ -648,7 +648,7 @@ NODEP_CPP_ZEGARW=\
 
 DEP_CPP_ZEGARW=\
 	".\StdAfx.h"\
-	".\Zegarek.h"\
+	".\ZegarekWinMain.h"\
 	".\ZegarWnd.h"\
 	
 NODEP_CPP_ZEGARW=\
@@ -680,10 +680,6 @@ SOURCE=.\GetPrivateProfileString.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\GetPrivateProfileStringW.h
-# End Source File
-# Begin Source File
-
 SOURCE=.\KalendarzWnd.h
 # End Source File
 # Begin Source File
@@ -708,7 +704,7 @@ SOURCE=.\UruchomWnd.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\Zegarek.h
+SOURCE=.\ZegarekWinMain.h
 # End Source File
 # Begin Source File
 

@@ -1,26 +1,29 @@
+//-------------------------------------------------------------
 #include "stdafx.h"
 #include "GetPrivateProfileStringW.h"
-//#ifdef _MSC_VER || __BORLANDC__
+//-------------------------------------------------------------
+#if defined(__WATCOM) || defined(___MSC_VER) ||  defined(VER_PLATFORM_WIN32_CE)
 
-#ifndef UNICODE
+#if !defined(UNICODE)
 #define UNICODE
 #endif
-
 #ifdef UNICODE
-#ifndef _T
-#define _T(s) L##s
-#endif
-#ifndef TEXT
-#define TEXT(s) L##s
-#endif
+	#ifndef _T
+	#define _T(s) L##s
+	#endif
+	#ifndef TEXT
+	#define TEXT(s) L##s
+	#endif
 #else
-#define _T(s) s
-#define TEXT(s) s
+	#ifndef TEXT
+	#define TEXT(s) s
+	#endif
+	#ifndef _T
+	#define _T(s) s
+	#endif
 #endif
-
-DWORD
-WINAPI
-GetPrivateProfileStringW(
+//-------------------------------------------------------------
+DWORD WINAPI GetPrivateProfileStringW(
     IN LPCWSTR lpAppName,
     IN LPCWSTR lpKeyName,
     IN LPCWSTR lpDefault,
@@ -29,11 +32,12 @@ GetPrivateProfileStringW(
     IN LPCWSTR lpFileName
     )
 {
-//As far as I know the corrent UNICODE line ending on windows platform is \r\n,
-//that is 0x000D000A and ansii 0x0D0A
-//so properly encoded UTF16 file should have a BOM, FF FE in the first 2 byte positions.
-//function supports only unicode 16-bit files
-
+//-------------------------------------------------------------
+// As far as I know the corrent UNICODE line ending on windows platform is \r\n,
+// that is 0x000D000A and ansii 0x0D0A
+// so properly encoded UTF16 file should have a BOM, FF FE in the first 2 byte positions.
+// function supports only unicode 16-bit files
+//-------------------------------------------------------------
 	HANDLE hfile = CreateFileW(lpFileName,GENERIC_READ,FILE_SHARE_READ,NULL,OPEN_EXISTING,NULL,NULL);
     if (hfile==INVALID_HANDLE_VALUE)
         {//MessageBox(NULL,_T("Nie można otworzyć pliku?!"),lpFileName,MB_OK);
@@ -100,5 +104,6 @@ GetPrivateProfileStringW(
                  }
 return 0;
 }
-
-//#endif
+//-------------------------------------------------------------
+#endif
+//-------------------------------------------------------------

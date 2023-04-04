@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="Zegarek_BCB.exe"/>
+    <OBJFILES value="ZegarWnd.obj AboutWnd.obj AlarmWnd.obj BateriaWnd.obj KalendarzWnd.obj 
+      sstsoft_button.obj StdAfx.obj UruchomWnd.obj ZegarekWinMain.obj"/>
+    <RESFILES value="Zegarek_BCB.res"/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value=""/>
+    <SPARELIBS value=""/>
+    <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi bcbsmp.bpi dclocx.bpi USRPKG.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG;UNICODE"/>
+    <SYSDEFINES value="NO_STRICT;_NO_VCL"/>
+    <MAINSOURCE value="Zegarek_BCB.bpf"/>
+    <INCLUDEPATH value="&quot;C:\Program Files\Borland\CBuilder5\Projects\&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="&quot;C:\Program Files\Borland\CBuilder5\Projects\&quot;;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-O2 -Q -Vx -Ve -VF -C -fp -ff -X- -ps -a8 -6 -b -d -k -y -v -vi- -tW -tWM- 
+      -c"/>
+    <PFLAGS value="-$YD -$W -$U -$R -$Q -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -GD -s -v"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cw32.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=2
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=1
+Special=0
+Private=0
+DLL=0
+Locale=1045
+CodePage=1250
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=2.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=4
+Item0=C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl
+Item1=C:\Program Files\Borland\CBuilder5\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item2=C:\Program Files\Borland\CBuilder6\Projects;D:\My Projects\CE\Zegarek;$(BCB)\include;$(BCB)\include\vcl
+Item3=D:\My Projects\CE\Zegarek;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=4
+Item0=C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item1=C:\Program Files\Borland\CBuilder5\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item2=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;D:\My Projects\CE\Zegarek;$(BCB)\lib\obj;$(BCB)\lib
+Item3=$(BCB)\Projects\Lib;D:\My Projects\CE\Zegarek;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=3
+Item0=_DEBUG;UNICODE
+Item1=_DEBUG
+Item2=_DEBUG UNICODE __UNICODE
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=1
+LinkDebugVcl=1
+  </IDEOPTIONS>
+</PROJECT>

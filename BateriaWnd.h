@@ -1,23 +1,18 @@
-////////////////////////
+//-------------------------------------------------------------
 /// BATERIA
-////////////////////////
-
+//-------------------------------------------------------------
 #ifndef BateriaWnd_h_
 #define BateriaWnd_h_
-
+//-------------------------------------------------------------
 #include <commctrl.h>
 #include <stdlib.h>
 #include <string.h>
 #include <Windowsx.h>
-
-#include "Zegarek.h"
-
-////////////////////////////////////////////////////////////////
-////////////////////////BATERIA    /////////////////////////////
-////////////////////////////////////////////////////////////////
-//
-//
-#ifndef _MSC_VER
+#include "ZegarekWinMain.h"
+//-------------------------------------------------------------
+// WIN32 MISSING DEFINITIONS 
+//-------------------------------------------------------------
+#if defined(__WATCOM) || defined(__GNUC__)
 
 #define BATTERY_CHEMISTRY_ALKALINE     0x01
 #define BATTERY_CHEMISTRY_NICD         0x02
@@ -47,6 +42,9 @@
 #define BATTERY_PERCENTAGE_UNKNOWN 0xff
 
 #define BATTERY_LIFE_UNKNOWN 0xffffffff
+
+#endif
+#if defined(__WATCOM) || defined(__GNUC__) || defined(__BORLANDC__)
 
 typedef struct _SYSTEM_POWER_STATUS_EX {
     BYTE ACLineStatus;
@@ -106,8 +104,7 @@ GetSystemPowerStatusEx2(
 	BOOL fUpdate
     );
 
-#endif
-/* all of definitions.h content */
+#endif /* all of definitions.h content BORLAND WATCOMC GNUC */
 
 extern struct __bateria{
 _SYSTEM_POWER_STATUS_EX sps;

@@ -1,28 +1,24 @@
+//-------------------------------------------------------------
 #include "stdafx.h"
 #include "BateriaWnd.h"
+//-------------------------------------------------------------
 /* all of definitions.h content */
-BOOL
-WINAPI
-GetSystemPowerStatusEx(
+//-------------------------------------------------------------
+BOOL WINAPI GetSystemPowerStatusEx(
     PSYSTEM_POWER_STATUS_EX pSystemPowerStatusEx,
 	BOOL fUpdate
     ) {return FALSE; }
-
+//-------------------------------------------------------------
 // Return value : 0 = fail.  Non-zero indicates length of returned data.
-DWORD
-WINAPI
-GetSystemPowerStatusEx2(
+DWORD WINAPI GetSystemPowerStatusEx2(
     PSYSTEM_POWER_STATUS_EX2 pSystemPowerStatusEx2,
     DWORD dwLen,
 	BOOL fUpdate
     ) {return NULL; }
-
-////////////////////////////////////////////////////////////////
-////////////////////////BATERIA    /////////////////////////////
-////////////////////////////////////////////////////////////////
-
+//-------------------------------------------------------------
+// BATERIA WND PROC
+//-------------------------------------------------------------
 struct __bateria bateria;
-
 // Mesage handler for the About box.
 LRESULT CALLBACK BateriaWndProc(HWND this_hDlg, UINT message, WPARAM wParam, LPARAM lParam)
 {
@@ -54,13 +50,10 @@ LRESULT CALLBACK BateriaWndProc(HWND this_hDlg, UINT message, WPARAM wParam, LPA
 	}
     return FALSE;
 }
-
-
-void CALLBACK BateriaTimerProc(
-HWND hWnd, 
-UINT uMsg, 
-UINT idEvent, 
-DWORD dwTime )
+//-------------------------------------------------------------
+// Bateria PROC
+//-------------------------------------------------------------
+void CALLBACK BateriaTimerProc( HWND hWnd,  UINT uMsg,  UINT idEvent, DWORD dwTime )
 {
 main_struct.global_Time = dwTime;
 
@@ -108,3 +101,4 @@ if (bateria.sps.ACLineStatus==0 && bateria.sps.BatteryLifePercent <= 5)
 
 //Brightess(100);
 }
+//-------------------------------------------------------------

@@ -1,6 +1,6 @@
-////////////////////////
+/////
 /// KALENDARZ
-////////////////////////
+/////
 
 #ifndef KalendarzWnd_h_
 #define KalendarzWnd_h_
@@ -10,11 +10,11 @@
 #include <string.h>
 #include <Windowsx.h>
 
-#include "Zegarek.h"
+#include "ZegarekWinMain.h"
 
-////////////////////////////////////////////////////////////////
-////////////////////////KALENDARZ  /////////////////////////////
-////////////////////////////////////////////////////////////////
+//-------------------------------------------------------------
+/////KALENDARZ  ////
+//-------------------------------------------------------------
 //
 //
 /* all of definitions.h content */
@@ -23,9 +23,9 @@ extern struct __kalendarz {
 HWND hWnd;
 } kalendarz;
 
-////////////////////////
+/////
 // OKNO KALENDARZA
-////////////////////////
+/////
 extern LRESULT CALLBACK	KalendarzWndProc		(HWND, UINT, WPARAM, LPARAM);
 
 #endif

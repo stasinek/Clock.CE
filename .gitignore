@@ -44,8 +44,14 @@ ipch/*
 *.vcxproj.filters
 moc_*.*
 qrc_*.*
+*.sbr
+*.vcl
+*.vco
+*.res
 *Release/*
 *Debug/*
-
-
+*X86Rel/*
+*emulatorRel/*
+*ARMV4Rel/*
+*ARMV4Dbg/*
 !EXE/*
