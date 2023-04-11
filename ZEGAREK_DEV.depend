@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1369376221 source:c:\documents and settings\stasiek\my documents\my projects\code-blocks\zegarek\main.cpp
+	<windows.h>
+	<commctrl.h>
+	<stdio.h>
+	"resource.h"
+
+1353754660 c:\documents and settings\stasiek\my documents\my projects\code-blocks\zegarek\resource.h
+
